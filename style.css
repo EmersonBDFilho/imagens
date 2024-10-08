@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(179, 179, 179);
+    color: rgb(255, 153, 0);
+    text-align: center;
+}
+
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.1em;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.galeria div:hover{
+    flex: 5;
+}
+
+.galeria:hover div:not(:hover){
+    filter: grayscale(100%)
+}
